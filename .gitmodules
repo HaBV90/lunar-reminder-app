@@ -1,0 +1,6 @@
+[submodule "lunar-reminder-frontend"]
+	path = lunar-reminder-frontend
+	url = git@github.com:HaBV90/lunar-reminder-frontend.git
+[submodule "lunar-reminder-backend"]
+	path = lunar-reminder-backend
+	url = git@github.com:HaBV90/lunar-reminder-backend.git
