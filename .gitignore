@@ -1,0 +1,34 @@
+# ===========================================
+# ROOT REPO - lunar-reminder-app
+# (Docs + Agent configs only)
+# ===========================================
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Environment (if any in root)
+.env
+.env.local
+.env.*.local
+
+# Misc
+*.pem
+.cache/
+
+# Backup folder (keep locally, don't track node_modules/build inside)
+backupCode/**/node_modules/
+backupCode/**/build/
+backupCode/**/dist/
+backupCode/**/ios/Pods/
