@@ -1,0 +1,53 @@
+schema: spec-driven
+
+context: |
+  # Lunar Reminder App
+  Vietnamese lunar calendar reminder app for tracking death anniversaries (giỗ),
+  birthdays, weddings, and traditional holidays according to the lunar calendar.
+
+  ## Tech Stack
+  - Frontend: React Native + TypeScript + Redux Toolkit + NativeWind
+  - Backend: NestJS + TypeScript + TypeORM + PostgreSQL
+  - Push Notifications: OneSignal
+  - Authentication: Custom JWT
+  - Local DB: SQLite (offline-first)
+
+  ## Project Structure
+  - frontend/src/ — React Native mobile app
+  - backend/src/ — NestJS API server
+  - docs/ — Reference documentation (architecture, guides, ADRs)
+  - openspec/specs/ — Implementation specifications (source of truth)
+
+  ## Conventions
+  - TypeScript strict mode, no 'any', explicit return types
+  - Functional components with hooks only
+  - Redux Toolkit for state management
+  - NestJS module-based architecture with DTOs (class-validator)
+  - Conventional Commits with scope (feat, fix, refactor, test, chore)
+  - Vietnamese cultural context — see docs/reference/glossary.md
+
+  ## Existing Capability Specs
+  - auth: Authentication and user management
+  - calendar: Calendar view and lunar date display
+  - events: Event CRUD and management
+  - groups: Event group organization
+  - notifications: Push notification system
+  - settings: App settings and preferences
+
+rules:
+  proposal:
+    - Keep proposals under 500 words
+    - Always include a "Non-goals" section
+    - Reference existing capability specs when relevant
+  spec:
+    - Follow existing spec format in openspec/specs/capabilities/
+    - Include API endpoints, data model, and user stories
+    - Reference docs/ for architecture and design patterns
+  tasks:
+    - Break tasks into chunks of max 2 hours
+    - Each task should be < 300 LOC change
+    - Include test requirements per task
+  design:
+    - Follow design system in docs/ui-ux/index.md
+    - Use NativeWind/Tailwind classes
+    - Include accessibility labels for all interactive elements
